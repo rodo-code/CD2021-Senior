@@ -1,10 +1,10 @@
 .vscode/*
 # Compiled source #
 ###################
-*.com
+**/*.com
 *.class
 *.dll
-*.exe
+**/*.exe
 *.o
 *.so
 
