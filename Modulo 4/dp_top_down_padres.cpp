@@ -21,7 +21,7 @@ int shop(int money, int g){ // Comprar el item g con la contidad de dinero money
         int posible_respuesta = shop(money-precio,g+1);
         if(posible_respuesta > res){ // Significa que encontre una nueva respuesto optima
             padres[money][g]=i; // Cual es la mejor decision a partir de este estado
-            res = posible_respuesta;
+            res = posible_respuesta; // Actualizamos la respuesta
         }
     }
     return memo[money][g] = res;
