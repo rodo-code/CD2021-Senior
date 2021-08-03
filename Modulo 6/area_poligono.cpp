@@ -16,9 +16,13 @@ struct punto{ // En realidad representa un vector
 int main(){
     // Un poligono es un conjunto de puntos
     vector<punto>P;
-    P.push_back(punto(5.0,2.0));
-    P.push_back(punto(4.0,3.0));
-    P.push_back(punto(10.0,8.0));
+    int num_points;
+    cin>>num_points;
+    for(int i=0;i<num_points;i++){ // Leemos los puntos
+        double cx,cy;
+        cin>>cx>>cy;
+        P.push_back(punto(cx,cy)); // Agregamos el punto al poligono
+    }
     double acum=0;
     int cp=P.size();
     for(int i=0;i<cp;i++){
